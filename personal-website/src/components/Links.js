@@ -1,6 +1,6 @@
 export default function Links() {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center m-2">
       <div className="LinkedIn-link-tile p-2 h-16 w-16 m-2 bg-white hover:bg-grey">
         <a href="https://www.linkedin.com/in/will-simms-80b6481bb/">
           <img className="mt-1" src="/LI-In-Bug.png" alt="linkedin logo" />

@@ -91,7 +91,7 @@ export default function Projects() {
                 Next
               </ButtonNext>
             </CarouselProvider>
-            <div className="w-3/5 text-left ml-3 p-1">
+            <div className="w-3/5 text-lg text-left ml-3 p-2">
               <p className="font-semibold">
                 {ironImageDescriptions[selectedSlideIndex].title}
               </p>
