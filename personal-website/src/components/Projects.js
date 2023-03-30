@@ -2,6 +2,7 @@ export default function Projects() {
   return (
     <div className="projects-wrapper p-5 mb-2 mx-2 bg-green text-white">
       <p className="text-2xl mb-1 font-bold"> Projects </p>
+      <hr className="my-2" />
       <p>Augmented Reality Business Cards</p>
       <p>
         Mobile application where users can create and edit custom business

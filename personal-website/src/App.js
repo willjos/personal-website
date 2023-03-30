@@ -13,7 +13,7 @@ function App() {
       </head>
       <main className="page-content">
         <div className="flex justify-between bg-blue m-2 text-white">
-          <header className="text-3xl text-center m-10 font-bold">
+          <header className="text-3xl m-10 font-bold">
             Will Simms - Junior Software Engineer
           </header>
           <Links />
