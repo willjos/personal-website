@@ -5,7 +5,7 @@ import {
   Slide,
   ButtonBack,
   ButtonNext,
-  Image,
+  ImageWithZoom,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
@@ -28,43 +28,43 @@ export default function Projects() {
           </p>
           <CarouselProvider
             className="mt-4"
-            naturalSlideHeight={100}
-            naturalSlideWidth={50}
+            naturalSlideHeight={19.5}
+            naturalSlideWidth={9}
             visibleSlides={1}
             totalSlides={9}
             hasMasterSpinner
           >
-            <Slider>
+            <Slider className="w-1/3">
               <Slide index={0}>
-                <Image src="IRON - Login.jpg" />
+                <ImageWithZoom src="IRON - Login.jpg" />
               </Slide>
               <Slide index={1}>
-                <Image src="IRON - Homepage.jpg" />
+                <ImageWithZoom src="IRON - Homepage.jpg" />
               </Slide>
               <Slide index={2}>
-                <Image src="IRON - Start session.jpg" />
+                <ImageWithZoom src="IRON - Start session.jpg" />
               </Slide>
               <Slide index={3}>
-                <Image src="IRON - B autocomplete.jpg" />
+                <ImageWithZoom src="IRON - B autocomplete.jpg" />
               </Slide>
               <Slide index={4}>
-                <Image src="IRON - Lat autocomplete.jpg" />
+                <ImageWithZoom src="IRON - Lat autocomplete.jpg" />
               </Slide>
               <Slide index={5}>
-                <Image src="IRON - Bench press log.jpg" />
+                <ImageWithZoom src="IRON - Bench press log.jpg" />
               </Slide>
               <Slide index={6}>
-                <Image src="IRON - Graphs.jpg" />
+                <ImageWithZoom src="IRON - Graphs.jpg" />
               </Slide>
               <Slide index={7}>
-                <Image src="IRON - Personal Records.jpg" />
+                <ImageWithZoom src="IRON - Personal Records.jpg" />
               </Slide>
               <Slide index={8}>
-                <Image src="IRON - Workout history.jpg" />
+                <ImageWithZoom src="IRON - Workout history.jpg" />
               </Slide>
             </Slider>
-            <ButtonBack>Back</ButtonBack>
-            <ButtonNext>Next</ButtonNext>
+            <ButtonBack className="my-2 mr-2 p-1 bg-blue">Back</ButtonBack>
+            <ButtonNext className="my-2 ml-32 p-1 bg-blue">Next</ButtonNext>
           </CarouselProvider>
         </div>
         <div className="pl-4">
