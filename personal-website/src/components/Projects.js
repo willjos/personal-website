@@ -9,7 +9,7 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { useState } from "react";
-import { ironImageDescriptions } from "./ironImageDescriptions";
+import { ironImageDescriptions, projectInfo } from "./ProjectInfoText";
 
 export default function Projects() {
   const [selectedSlideIndex, setSelectedSlideIndex] = useState(0);
@@ -30,16 +30,8 @@ export default function Projects() {
       <hr className="my-2" />
       <div className="flex justify-between">
         <div className="pr-4">
-          <p className="text-lg font-semibold my-1">
-            IRON Workout Tracker App (Personal Project)
-          </p>
-          <p>
-            React Native application where users can create custom workouts.
-            Following workout creation, a session can be started, logging the
-            weight and reps of each set for a given exercise. Analytics can be
-            viewed, including workout history, personal records, and progress
-            graphs.
-          </p>
+          <p className="text-lg font-semibold my-1">{projectInfo.IRON.title}</p>
+          <p>{projectInfo.IRON.description}</p>
           <div className="flex justify-around mt-4">
             <CarouselProvider
               className="h-2/5 w-2/5 mr-3"
@@ -102,16 +94,8 @@ export default function Projects() {
           </div>
         </div>
         <div className="pl-4">
-          <p className="text-lg font-semibold my-1">
-            AR Business Cards App (Group Project)
-          </p>
-          <p>
-            React Native application where users can create and edit custom
-            business cards. These can then be shown to other users via QR codes,
-            which can be scanned on the app to display the business card in AR.
-            Cards are collected when scanned and can be viewed again at a later
-            point.
-          </p>
+          <p className="text-lg font-semibold my-1">{projectInfo.AR.title}</p>
+          <p>{projectInfo.AR.description}</p>
           <img
             className="mt-4 w-96 h-96"
             src="AR Business Cards.jpeg"
