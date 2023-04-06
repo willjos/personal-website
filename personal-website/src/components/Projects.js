@@ -32,7 +32,7 @@ export default function Projects() {
         <div className="pr-4">
           <p className="text-lg font-semibold my-1">{projectInfo.IRON.title}</p>
           <p>{projectInfo.IRON.description}</p>
-          <div className="flex justify-around mt-4">
+          <div className="flex justify-between mt-4">
             <CarouselProvider
               className="h-2/5 w-2/5 mr-3"
               naturalSlideHeight={200}
@@ -41,7 +41,7 @@ export default function Projects() {
               totalSlides={9}
               hasMasterSpinner
             >
-              <Slider className="">
+              <Slider>
                 <Slide index={0}>
                   <ImageWithZoom src="IRON - Login.jpg" />
                 </Slide>
@@ -71,7 +71,7 @@ export default function Projects() {
                 </Slide>
               </Slider>
               <ButtonBack
-                className="my-2 p-1 bg-blue"
+                className="my-2 p-1 bg-blue mr-40 ml-1"
                 onClick={() => handleSlideChange("Back")}
               >
                 Back
